@@ -1,13 +1,17 @@
+$headerPresentationMinHeight: 530px; // .header-presentation и .header-presentation::before - должна быть равная min-height
+
 // --------------------------------------------------------------------------------- header-top
 
 .header-top-wrap {
     position: absolute;
     width: 100%;
+    z-index: 3;
 }
 
 .header-top {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #fff;
 }
 
 .header-top-container {
@@ -213,6 +217,22 @@
 
 .header-presentation {
     height: 100vh;
+    min-height: $headerPresentationMinHeight;
+    background-image: url("../img/header-presentation_bg-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-presentation::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: $headerPresentationMinHeight;
+    background: linear-gradient(284deg, rgba(229, 229, 231, 0.5) 40%, rgba(229, 229, 231, 0) 40%), linear-gradient(284deg, rgba(229, 229, 231, 0) 42%, rgba(229, 229, 231, 0.5) 42%, rgba(229, 229, 231, 0.5) 44%, rgba(229, 229, 231, 0) 44%), linear-gradient(90.44deg, rgba(19, 19, 19, 0.7) 1.18%, rgba(28, 28, 28, 0.588) 52.97%, rgba(17, 17, 17, 0.7) 98.68%);
+    z-index: 0;
 }
 
 // --------------------------------------------------------------------------------- header @media
