@@ -1,0 +1,69 @@
+// --------------------------------------------------------------------------------- @import reset and modules styles
+
+@import "../../node_modules/reset-css/sass/reset";
+@import "../../node_modules/slick-slider/slick/slick.scss";
+@import "../../node_modules/slick-slider/slick/slick-theme.scss";
+@import "../../node_modules/simplelightbox/src/simple-lightbox.scss";
+
+// --------------------------------------------------------------------------------- normalise
+
+* {
+    box-sizing: border-box;
+    // overflow-x: hidden;
+    // background-color: #fff;
+}
+
+body {
+    max-width: 3072px;
+    margin: 0 auto;
+    font-family: "Lato-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+.container,
+.container-inner {
+    padding: 0 15px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 990px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 570px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        min-width: 320px;
+        width: 100%;
+    }
+}
+
+// --------------------------------------------------------------------------------- @import styles
+
+@import "fonts";
+@import "main-classes";
+@import "header";

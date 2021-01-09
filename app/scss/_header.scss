@@ -1,0 +1,318 @@
+// --------------------------------------------------------------------------------- header-top
+
+.header-top-wrap {
+    position: absolute;
+    width: 100%;
+}
+
+.header-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo-img {
+    width: 200px;
+}
+
+.header-phones,
+.header-mails,
+.header-mails-md {
+    position: relative;
+    line-height: 20px;
+    color: #4e4e4e;
+}
+
+.header-call-xs {
+    display: none;
+}
+
+.header-mails-md {
+    display: none;
+}
+
+.header-phones-list::before,
+.header-mails-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -25px;
+    margin: auto 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone_hesder.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-phones-list::before {
+    background-image: url("../img/phone_hesder.svg");
+}
+
+.header-mails-list::before {
+    background-image: url("../img/mail_black.svg");
+}
+
+.header-call-btn {
+    padding: 13px 30px;
+    background-color: #c60b0b;
+    border-radius: 1px;
+    font-size: 18px;
+    color: #fff;
+}
+
+// --------------------------------------------------------------------------------- header-menu
+
+.header-menu,
+.nav-nested {
+    background-color: #444;
+    color: #fff;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    font-size: 0;
+}
+
+.nav-list-elem {
+    position: relative;
+    display: inline;
+    font-size: 18px;
+}
+
+.nav-elem-btn {
+    display: inline-block;
+    padding: 13px 80px 13px 44px;
+}
+
+.nav-elem-btn:hover {
+    background-color: #c60b0b;
+}
+
+.nav-elem-btn__menu::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 12px;
+    display: block;
+    width: 25px;
+    height: 13px;
+    background-image: url("../img/hamburger.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-elem-btn__menu::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    right: 55px;
+    display: block;
+    width: 20px;
+    height: 12px;
+    background-image: url("../img/chevron_down.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 576px) {
+        right: 20px;
+    }
+}
+
+.nav-nested {
+    position: absolute;
+    display: none;
+    max-height: 610px;
+    overflow-y: auto;
+    &.is-toggle {
+        display: block;
+    }
+}
+
+.nav-nested-elem:hover {
+    background-color: #c60b0b;
+}
+
+.nested-elem-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    width: 400px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form-enter {
+    width: 328px;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 37px;
+    background-color: rgba(196, 196, 196, 0.3);
+    border: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.search-form-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 12px;
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(196, 196, 196, 0);
+    background-image: url("../img/search_white.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+.search-form-btn:hover {
+    cursor: pointer;
+}
+
+// --------------------------------------------------------------------------------- header-presentation
+
+.header-presentation {
+    height: 100vh;
+}
+
+// --------------------------------------------------------------------------------- header @media
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+    .header-top {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .header-phones {
+        text-align: end;
+    }
+
+    .header-phones-list,
+    .header-mails-list {
+        width: max-content;
+        margin: auto 0 auto auto;
+    }
+
+    .header-phones-list {
+        position: relative;
+    }
+
+    .header-mails {
+        display: none;
+    }
+
+    .header-mails-md {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .header-call-btn {
+        font-size: 16px;
+    }
+
+    .nav-list-elem {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .search-form-enter {
+        height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-phones,
+    .header-mails,
+    .header-mails-md,
+    .header-call-btn {
+        font-size: 14px;
+    }
+
+    .nested-elem-btn {
+        width: 320px;
+    }
+
+    .search-form {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-top {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header-logo-img {
+        width: 170px;
+    }
+
+    .header-phones,
+    .header-mails,
+    .header-mails-md {
+        font-size: 13px;
+    }
+
+    .header-call-xs {
+        display: block;
+    }
+
+    .header-call {
+        display: none;
+    }
+
+    .header-call-btn {
+        padding: 0;
+        background-color: #fff;
+        font-size: 12px;
+        color: #c60b0b;
+        border-bottom: 1px dashed #c60b0b;
+    }
+
+    .nav-elem-btn {
+        padding-right: 40px;
+        padding-left: 35px;
+    }
+
+    .nav-list-elem {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .nav-nested {
+        left: -15px;
+        max-height: 320px;
+        max-height: 415px;
+    }
+
+    .nested-elem-btn {
+        width: 100vw;
+    }
+}
