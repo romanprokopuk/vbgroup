@@ -78,6 +78,7 @@
 }
 
 .nav-container {
+    min-height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,6 +115,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 576px) {
+        left: 7px;
+    }
 }
 
 .nav-elem-btn__menu::after {
@@ -129,7 +133,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     @media (max-width: 576px) {
-        right: 20px;
+        right: 17px;
     }
 }
 
@@ -160,7 +164,7 @@
 }
 
 .search-form-enter {
-    width: 328px;
+    width: 500px;
     height: 40px;
     padding-left: 16px;
     padding-right: 37px;
@@ -173,12 +177,8 @@
     outline: none;
 }
 
-.search-form-btn {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 12px;
-    margin: auto 0;
+.search-form-btn,
+.search-btn {
     width: 20px;
     height: 20px;
     background-color: rgba(196, 196, 196, 0);
@@ -187,6 +187,22 @@
     background-position: center;
     background-repeat: no-repeat;
     border: 0;
+}
+
+.search-btn {
+    display: none;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+
+.search-form-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 12px;
+    margin: auto 0;
 }
 
 .search-form-btn:hover {
@@ -243,6 +259,7 @@
     }
 
     .search-form-enter {
+        width: 328px;
         height: 36px;
     }
 }
@@ -255,12 +272,45 @@
         font-size: 14px;
     }
 
+    .nav-list {
+        &.is-toggle {
+            display: none;
+        }
+    }
+
     .nested-elem-btn {
         width: 320px;
     }
 
+    .search-wrap {
+        &.is-search-btn-toggle {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+    }
+
     .search-form {
         display: none;
+        width: 100%;
+        &.is-toggle {
+            display: block;
+        }
+    }
+
+    .search-form-enter {
+        width: 100%;
+    }
+
+    .search-btn {
+        display: block;
+        &.is-toggle {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+            background-image: url("../img/close_white.svg");
+        }
     }
 }
 
@@ -297,8 +347,8 @@
     }
 
     .nav-elem-btn {
-        padding-right: 40px;
-        padding-left: 35px;
+        padding-right: 33px;
+        padding-left: 33px;
     }
 
     .nav-list-elem {
