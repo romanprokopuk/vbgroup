@@ -144,7 +144,7 @@ $headerPresentationMinHeight: 530px; // .header-presentation и .header-presenta
 .nav-nested {
     position: absolute;
     display: none;
-    max-height: 610px;
+    max-height: 600px;
     overflow-y: auto;
     &.is-toggle {
         display: block;
