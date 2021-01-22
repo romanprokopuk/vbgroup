@@ -3,7 +3,6 @@
 @import "../../node_modules/reset-css/sass/reset";
 @import "../../node_modules/slick-slider/slick/slick.scss";
 @import "../../node_modules/slick-slider/slick/slick-theme.scss";
-@import "../../node_modules/simplelightbox/src/simple-lightbox.scss";
 
 // --------------------------------------------------------------------------------- normalise
 
@@ -68,3 +67,4 @@ a {
 @import "general-classes";
 @import "header";
 @import "categories";
+@import "recommendations";

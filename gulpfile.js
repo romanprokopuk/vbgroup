@@ -35,7 +35,6 @@ gulp.task("js", function () {
     .src([
       "./node_modules/jquery/dist/jquery.js",
       "./node_modules/slick-slider/slick/slick.js",
-      "./node_modules/simplelightbox/dist/simple-lightbox.js",
     ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
