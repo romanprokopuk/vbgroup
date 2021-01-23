@@ -1,9 +1,25 @@
 // --------------------------------------------------------------------------------- recommendations
 .recommendations {
-    padding-top: 65px;
-    padding-bottom: 45px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
-.slick-arrow::before {
-    color: #b2b6bc;
+// --------------------------------------------------------------------------------- @media
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .recommendations {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .recommendations {
+        padding-top: 20px;
+    }
 }
