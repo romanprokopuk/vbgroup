@@ -1,3 +1,5 @@
+// --------------------------------------------------------------------------------- general-classes
+
 .clear-both {
     clear: both;
 }
@@ -12,7 +14,8 @@
 // --------------------------------------------------------------------------------- general-slider
 
 .general-slider-elem {
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid #e5e9f5;
 }
 
 .slider-elem-wrap {
@@ -74,7 +77,7 @@
     opacity: 0.8;
 }
 
-.slider-hit-off {
+.slider-hit__off {
     opacity: 0;
 }
 
@@ -99,6 +102,10 @@
     color: #1077d6;
 }
 
+.slider-stock__red {
+    color: #c60b0b;
+}
+
 .slider-price {
     margin-top: 10px;
     font-family: "Lato-Bold";
@@ -108,7 +115,7 @@
     opacity: 0.6;
 }
 
-// --------------------------------------------------------------------------------- @media
+// --------------------------------------------------------------------------------- general-classes @media
 
 @media (max-width: 1200px) {
     .slick-prev {

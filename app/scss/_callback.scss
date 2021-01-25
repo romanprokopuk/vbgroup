@@ -1,0 +1,38 @@
+// --------------------------------------------------------------------------------- callback
+
+.callback {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: linear-gradient(284deg, #444 40%, #303030 40%, #303030 42%, #444 42%, #444 44%, #303030 44%);
+}
+
+.general-title__callback {
+    color: #fff;
+}
+
+.callback-title {
+    font-family: "Lato-Bold";
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+// --------------------------------------------------------------------------------- callback @media
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .callback {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .callback {
+        padding-top: 20px;
+    }
+}

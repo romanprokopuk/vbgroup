@@ -6,17 +6,17 @@
 
 // --------------------------------------------------------------------------------- recommendations-slider
 
-.recommendations-slider {
+.general-slider__recommendations {
     margin-top: 45px;
 }
 
-// --------------------------------------------------------------------------------- @media
+// --------------------------------------------------------------------------------- recommendations @media
 
 @media (max-width: 1200px) {
 }
 
 @media (max-width: 992px) {
-    .recommendations-slider {
+    .general-slider__recommendations {
         margin-top: 25px;
     }
 }
