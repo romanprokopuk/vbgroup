@@ -11,6 +11,10 @@
 
 // --------------------------------------------------------------------------------- general-slider
 
+.general-slider-elem {
+    padding: 5px;
+}
+
 .slider-elem-wrap {
     display: block;
 }
@@ -54,11 +58,66 @@
     background-image: url("../img/chevron-big-right.svg");
 }
 
+.slider-hit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 116px;
+    height: 35px;
+    border-radius: 40px;
+    font-family: "RobotoCondensed-Bold";
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #c60b0b;
+    opacity: 0.8;
+}
+
+.slider-hit-off {
+    opacity: 0;
+}
+
+.slider-img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slider-title {
+    margin-top: 20px;
+    font-family: "RobotoCondensed-Bold";
+    font-size: 18px;
+    line-height: 21px;
+    color: #4e4e4e;
+}
+
+.slider-stock {
+    margin-top: 4px;
+    font-family: "Lato-Medium";
+    font-size: 12px;
+    line-height: 14px;
+    color: #1077d6;
+}
+
+.slider-price {
+    margin-top: 10px;
+    font-family: "Lato-Bold";
+    font-size: 16px;
+    line-height: 19px;
+    color: #4e4e4e;
+    opacity: 0.6;
+}
+
 // --------------------------------------------------------------------------------- @media
 
 @media (max-width: 1200px) {
     .slick-prev {
         left: 92%;
+    }
+
+    .slider-hit {
+        width: 113px;
+        height: 32px;
     }
 }
 
@@ -71,6 +130,23 @@
     .slick-prev {
         left: 90%;
     }
+
+    .slider-hit {
+        width: 80px;
+        height: 24px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .slider-title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .slider-price {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -82,10 +158,30 @@
     .slick-prev {
         left: 86%;
     }
+
+    .slider-title {
+        margin-top: 10px;
+    }
+
+    .slider-price {
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 576px) {
     .slick-prev {
         left: 82%;
+    }
+
+    .slider-hit {
+        width: 72px;
+        height: 20px;
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .slider-price {
+        font-size: 13px;
+        line-height: 16px;
     }
 }
