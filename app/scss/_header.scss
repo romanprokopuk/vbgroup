@@ -322,7 +322,7 @@ $headerPresentationMinHeight: 530px; // .header-presentation и .header-presenta
     }
 
     .search-form-enter {
-        width: 328px;
+        width: 305px;
         height: 36px;
     }
 
@@ -334,11 +334,20 @@ $headerPresentationMinHeight: 530px; // .header-presentation и .header-presenta
 }
 
 @media (max-width: 768px) {
+    .header-logo-img {
+        width: 170px;
+    }
+
     .header-phones,
     .header-mails,
     .header-mails-md,
     .header-call-btn {
         font-size: 14px;
+    }
+
+    .header-call-btn {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .nav-list {
@@ -408,10 +417,6 @@ $headerPresentationMinHeight: 530px; // .header-presentation и .header-presenta
     .header-top {
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-
-    .header-logo-img {
-        width: 170px;
     }
 
     .header-phones,
