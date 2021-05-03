@@ -13,6 +13,6 @@ $(document).ready(function () {
     $(".general-slider").slick({
         slidesToShow: 4,
         slidesToScroll: 2,
-        autoplay: true,
+        autoplay: false,
     });
 });
